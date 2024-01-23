@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- games-list -->
+    <section id="games-list" class="d-none">
+        <div class="intro-bg"></div>
+        <div class="content position-relative">
+            <div class="content-container  position-sticky z-3" id="content--container">
+                <div class="navbar row align-items-center shadow position-absolute">
+                    <div class="brand col-md-4 d-flex flex-row justify-content-start align-items-center">
+                        <div class="image col-lg-2 text-end px-1"><img src="images/logo-sm.png" alt="logo" /></div>
+                        <h5 class="m-0 col-lg-10">
+                            GAME REVIEWS
+                        </h5>
+                    </div>
+                    <div class="col-2 text-end d-none" id="btn-nav-out">
+                        <button class="btn border-btn" id="btn-nav"><i class="fa-solid fa-bars" style="color: #282E3E; font-size: 18px;"></i></button>
+                    </div>
+                    <div class="menu col-md-4" id="menu-ho">
+                        <ul class="d-flex flex-row justify-content-end align-items-start m-0">
+                            <li><a class="menu-item active" href="#">MMORPG</a></li>
+                            <li><a class="menu-item" href="#">SHOOTER</a></li>
+                            <li><a class="menu-item" href="#">SAILING</a></li>
+                            <li><a class="menu-item" href="#">PERMADEATH</a></li>
+                            <li><a class="menu-item" href="#">SUPERHERO</a></li>
+                            <li><a class="menu-item" href="#">PIXEL</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-ve d-none" id="menu-ve">
+                        <ul class="d-flex flex-column justify-content-end align-items-start m-0">
+                            <li><a class="menu-item-ve active-ve" href="#">MMORPG</a></li>
+                            <li><a class="menu-item-ve" href="#">SHOOTER</a></li>
+                            <li><a class="menu-item-ve" href="#">SAILING</a></li>
+                            <li><a class="menu-item-ve" href="#">PERMADEATH</a></li>
+                            <li><a class="menu-item-ve" href="#">SUPERHERO</a></li>
+                            <li><a class="menu-item-ve" href="#">PIXEL</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="game-cards z-0 py-5">
+                <div class="container">
+                    <div class="row d-flex flex-row justify-content-start align-items-center g-4" id="game-list">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- game-details -->
+    <section id="game-details" class="d-none">
+        <div class="container text-white py-4 vh-100">
+            <div class="row d-flex flex-row justify-content-evenly align-items-center mx-auto">
+                <div class="col-6">
+                    <h3 class="text-start">Details Game</h3>
+                </div>
+                <div class="col-6 text-end">
+                    <button class="btn-close btn-close-white" id="close"></button>
+                </div>
+            </div>
+            <div class="row d-flex flex-row justify-content-evenly align-items-start mx-auto py-3 g-4" id="g-detail">
+            </div>
+        </div>
+    </section>
+    <!-- loadnig -->
+    <section class="position-relative" id="loading">
+        <div class="load position-absolute"><span class="loader"></span></div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
+
+</html>

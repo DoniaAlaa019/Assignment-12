@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+}
+
+
+/* background */
+
+.intro-bg {
+    background-image: url(../images/wraper.png);
+    height: 30vh;
+    background-color: #272B30;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content,
+#game-details {
+    background-color: #272B30;
+    /* height: 100vh; */
+    width: 100%;
+}
+
+.load {
+    background-color: rgba(33, 37, 41, 0.75);
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* navbar */
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 28px;
+}
+
+.navbar {
+    background-color: #3A497B;
+    color: #fff;
+    width: 75%;
+    border-radius: 20px;
+    padding-block: 10px;
+    padding-inline: 5px;
+}
+
+.navbar img {
+    width: 38px;
+    height: 35.42px;
+}
+
+.navbar h5 {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: italic;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    padding-inline: 7px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.navbar .menu .menu-item {
+    color: #fff;
+    transition: color 0.5s;
+}
+
+.navbar .menu .menu-item:hover {
+    color: #0099CC;
+    transition: color 0.5s;
+}
+
+.navbar .menu .active {
+    color: #0099CC;
+    transition: color 0.5s;
+}
+
+.navbar .border-btn {
+    border: 1px solid rgba(33, 37, 41, 0.75);
+}
+
+.navbar .border-btn:hover {
+    border: 3px solid black;
+    padding-block: 4px;
+    padding-inline: 10px;
+}
+
+.navbar .menu-ve .menu-item-ve {
+    color: #fff;
+    transition: color 0.5s;
+}
+
+.navbar .menu-ve .menu-item-ve:hover {
+    color: #0099CC;
+    transition: color 0.5s;
+}
+
+.navbar .menu-ve .active-ve {
+    color: #0099CC;
+    transition: color 0.5s;
+}
+
+
+/* game-list */
+
+.card {
+    filter: grayscale(0.7);
+    transform: scale(100%);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+    height: 310px;
+}
+
+.card:hover {
+    filter: grayscale(0);
+    transform: scale(102%);
+}
+
+
+/* game-details */
+
+.bg-blue-light {
+    background-color: #0DCAF0;
+}
+
+.badge {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+}
+
+.bg-dack-light {
+    background-color: #32383E;
+}
+
+
+/* load */
+
+.loader {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
